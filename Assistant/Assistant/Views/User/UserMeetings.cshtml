@@ -1,0 +1,162 @@
+﻿@model MeetingsViewModel
+@{
+    ViewBag.Title = "User Meetings";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@section HeaderSection {
+    <link href="~/Content/plugins/jquery-ui-time-picker/jquery-ui-timepicker-addon.min.css" rel="stylesheet" />
+    <link href="~/Content/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Content/plugins/loader/loader.css" rel="stylesheet" />
+    <link href="~/Content/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="~/Content/plugins/dataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+
+}
+
+@section Breadcramps {
+    <ol class="breadcrumb">
+        <li><a href="@Model.UsersUrl"><i class="fa fa-users"></i> Users</a></li>
+        <li class="active">@Model.UserFullName</li>
+    </ol>
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box" id="expneses-box">
+            <div class="box-header with-border">
+                <div class="row">
+                    <div class="col-md-1">
+                        <button id="create-meeting" class="btn btn-default"><i class="fa fa-plus"></i> Create</button>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-success" form="export-to-excel"><i class="fa fa-file-excel-o"></i> Excel</button>
+                    </div>
+                    <form action="@Model.ExportToExcelUrl" id="export-to-excel" method="post">
+                        <div class="col-md-2">
+                            <select class="form-control" id="filter-meeting-status-id" name="meetingStatusId">
+                                <option value=""></option>
+                                @foreach (var item in Model.MeetingStatuses)
+                                {
+                                    <option @(item.IsSelected ? Html.Raw("selected='selected'") : null) value="@item.Key">@item.Value</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" name="startDate" id="from" />
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" name="endDate" id="to" />
+                        </div>
+                    </form>
+                    <div class="col-md-1">
+                        <button class="btn btn-warning" id="clear-filter"><i class="fa fa-times"></i> Clear</button>
+                    </div>
+                </div>
+                <div class="box-tools pull-right">
+
+                </div>
+            </div>
+            <div class="box-body" id="meetings-box">
+                <table id="meetings-table" class="table table-bordered table-responsive table-hover">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Meeting Time</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="meetings-body">
+                        @foreach (var item in Model.MeetingItems)
+                        {
+                            <tr>
+                                <td>@item.PersonFirstName</td>
+                                <td>@item.PersonLastName</td>
+                                <td>@item.MeetingTime</td>
+                                <td><span class="label label-@Html.Raw(item.MeetingStatusClassName)">@item.MeetingStatusCaption</span></td>
+                                <td>
+                                    <a href="@item.UpdateUrl" class="btn btn-xs btn-warning update-meeting" data-person-firstname="@item.PersonFirstName" data-person-lastname="@item.PersonLastName" data-meeting-time="@item.MeetingTime" data-status-id="@item.MeetingStatusId"> <i class="fa fa-pencil"></i> Edit</a>
+                                    <a href="@item.DeleteUrl" class="btn btn-xs btn-danger delete-btn"> <i class="fa fa-trash-o"></i> Delete</a>
+                                </td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="hidden" id="meeting-create-update-form">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="expense-caption">Firstname</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Enter firstname">
+            </div>
+            <div class="form-group">
+                <label for="amount">Lastname</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter lastname">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="expense-caption">Meeting Time</label>
+                <input type="text" class="form-control apply-date-time-picker meeting-time" placeholder="Enter meeting time">
+            </div>
+            <div class="form-group">
+                <label for="amount">Status</label>
+                <select class="form-control" id="status">
+                    <option value=""></option>
+                    @foreach (var item in Model.MeetingStatuses)
+                    {
+                        <option value="@item.Key">@item.Value</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section FooterSection {
+    <script>
+        var createUrl = "@Model.CreateMeetingUrl";
+        var filterMeetingUrl = "@Model.FilterMeetingUrl";
+        var exportToExcelUrl = "@Model.ExportToExcelUrl";
+    </script>
+    <script src="~/Content/plugins/dataTables/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/plugins/dataTables/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/Content/plugins/jquery-ui-time-picker/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="~/Content/plugins/jQuery/jquery.numeric-input.js"></script>
+    <script src="~/Content/plugins/toastr/toastr.min.js"></script>
+    <script src="~/Content/plugins/toastr/toastrNotification.js"></script>
+    <script src="~/Content/plugins/loader/loader.js"></script>
+    <script src="~/Content/plugins/bootbox/bootbox.min.js"></script>
+    <script src="~/Content/plugins/template7/template7.min.js"></script>
+    <script src="~/Content/scripts/Users/Meetings.js"></script>
+    <script id="meetings-template" type="text/Template7">
+        {{#each MeetingItems}}
+        <tr>
+            <td>{{PersonFirstName}}</td>
+            <td>{{PersonLastName}}</td>
+            <td>{{MeetingTime}}</td>
+            <td><span class="label label-{{MeetingStatusClassName}}">{{MeetingStatusCaption}}</span></td>
+            <td>
+                <a href="{{UpdateUrl}}" class="btn btn-xs btn-warning update-meeting" data-person-firstname="{{PersonFirstName}}" data-person-lastname="{{PersonLastName}}" data-meeting-time="{{MeetingTime}}" data-status-id="{{MeetingStatusId}}"> <i class="fa fa-pencil"></i> Edit</a>
+                <a href="{{UpdateUrl}}" class="btn btn-xs btn-danger delete-btn"> <i class="fa fa-trash-o"></i> Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </script>
+}

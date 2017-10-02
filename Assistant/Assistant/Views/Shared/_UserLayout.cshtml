@@ -1,0 +1,31 @@
+﻿
+@{
+    var userLayoutViewModel = ViewBag.UserLayoutViewModel as UserLayoutViewModel;
+    userLayoutViewModel = userLayoutViewModel ?? new UserLayoutViewModel();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section HeaderSection {
+    @RenderSection("HeaderSection", false)    
+}
+
+@section Breadcramps {
+    @RenderSection("Breadcramps", false)    
+}
+
+<div class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+        @foreach (var item in userLayoutViewModel.TabItems)
+        {
+            <li @(item.IsActive ? Html.Raw("class='active'") : null)><a @(item.IsActive ? null : Html.Raw($"href='{item.Url}'")) >@item.Caption</a></li>
+        }
+    </ul>
+    <div class="tab-content">
+        @RenderBody()
+    </div>
+</div>
+
+
+@section FooterSection {
+    @RenderSection("FooterSection", false)
+}

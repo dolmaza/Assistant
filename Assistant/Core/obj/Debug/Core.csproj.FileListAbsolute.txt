@@ -1,0 +1,32 @@
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\Core.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\Core.pdb
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.pdb
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\Core.dll.config
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\EntityFramework.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\EntityFramework.xml
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.Migrations.initDatabase.resources
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.csproj.GenerateResource.Cache
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Core\obj\Debug\Core.Migrations.ChangeBirthDateColumnTypeInUsersTable.resources
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\Core.dll.config
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\Core.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\Core.pdb
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\EntityFramework.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\EntityFramework.xml
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.Migrations.initDatabase.resources
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.Migrations.ChangeBirthDateColumnTypeInUsersTable.resources
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.csproj.GenerateResource.Cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Core\obj\Debug\Core.pdb

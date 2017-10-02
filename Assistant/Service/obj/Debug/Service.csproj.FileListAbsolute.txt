@@ -1,0 +1,32 @@
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\Service.dll.config
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\Service.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\Service.pdb
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\obj\Debug\Service.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\obj\Debug\Service.pdb
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\Core.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\Core.pdb
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\EntityFramework.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\Core.dll.config
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\EntityFramework.xml
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\EntityFramework.SqlServer.dll
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\bin\EntityFramework.SqlServer.xml
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\obj\Debug\Service.Properties.Resources.resources
+C:\Users\Giorgi\Documents\Visual Studio 2017\Projects\Assistant\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\Service.dll.config
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\Service.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\Service.pdb
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\Core.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\EntityFramework.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\EntityFramework.SqlServer.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\Core.pdb
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\Core.dll.config
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\EntityFramework.xml
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\bin\EntityFramework.SqlServer.xml
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\obj\Debug\Service.Properties.Resources.resources
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\obj\Debug\Service.dll
+C:\Users\Giorgi\Documents\Working\Projects\Assistant\Assistant\Service\obj\Debug\Service.pdb
